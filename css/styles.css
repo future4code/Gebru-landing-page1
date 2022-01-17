@@ -4,6 +4,107 @@
 	margin: 0;
 	text-decoration: none;
 	color: #6C4834;
+  box-sizing: border-box;
+}
+
+/*Estilo Cabeçalho - HEADER*/
+header{
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5DFDB;
+    border-bottom: 1px solid rgb(185, 178, 178);
+}
+
+.cabecalho{
+    opacity: 0.9;
+
+}
+
+header .logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(../img/logo-alta-resolucao.png) center center/ 100px no-repeat;
+    font-size: 0;
+    cursor: pointer;
+}
+
+li, a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6C4834;
+    border-bottom: transparent;
+}
+
+li, a:hover{
+    color:#96674e;
+    transition: all 0.3s ease 0s;
+    border-bottom: 1px #96674e;
+}
+
+.nav_link{
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav_link li{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+
+.divBusca{
+    display: flex;
+    align-items: center;
+    border:none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+    background-color:#96674e;
+}
+
+.divBusca:hover{
+    background-color: #96674e;
+}
+
+#btnBusca{
+    width: 20px;
+    cursor: pointer;
+    transform: translate(-4%, 10%);
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    background-color:#96674e;
+}
+
+.botao{
+    border: 1px solid black;
+    background: none;
+    padding: 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.botao:hover{
+   color: #ffffff;
+   font-weight: bolder;
+   background: #6C4834;
+   
 }
 
 /*Página Principal*/
@@ -58,4 +159,3 @@
 	border: 3px solid #6C4834;
 }
 
-/*Header*/
