@@ -171,6 +171,55 @@ header .logo{
 	border: 3px solid #6C4834;
 }
 
+
+/*Header*/
+/* section Apresentação*/
+.section-1{
+
+	padding-left: 60px;
+	padding-right: 50px;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Times New Roman', serif;
+	display: grid;
+	grid-template-columns: 550px 1fr 1fr;
+	grid-template-rows: 150px 200px 150px;
+	}
+
+	.section-1 h1{
+	
+	font-family: 'Times New Roman', serif;
+	align-self: flex-end;
+	grid-column: 1;
+	grid-row: 1;
+	font-size: 350%;
+	}
+
+	.section-1 p{
+		
+	padding-top: 10px;	
+	font-family: 'Futura SC T OT Light' serif;
+	grid-column: 1;
+	grid-row: 2;
+	font-size: 200%;
+	}
+
+	.section-1 img{
+	padding-top: 30px;	
+	height: 450px;	
+	grid-column: 2;
+	grid-row: 1/2;
+	
+	}
+	.section-1 a{
+	padding-top: 10px;	
+	grid-column: 1;	
+	grid-row: 3 ;
+	align-self: flex-start;
+	}
+
+
+	
 /*Section 2 - Nossos Produtos*/
 #nossos-produtos {
     background-image: url(../img/cement.jpg);
@@ -256,3 +305,4 @@ header .logo{
     flex-direction: column;
     margin-right: 100px;
 }
+
