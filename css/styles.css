@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /*Geral*/
 * {
 	padding: 0;
@@ -113,9 +115,9 @@ header .logo{
 }
 
 .botao:hover{
-   color: #ffffff;
-   font-weight: bolder;
-   background: #6C4834;
+ color: #ffffff;
+ font-weight: bolder;
+ background: #6C4834;
 
 }
 
@@ -184,42 +186,42 @@ header .logo{
 	display: grid;
 	grid-template-columns: 550px 1fr 1fr;
 	grid-template-rows: 150px 200px 150px;
-	}
+}
 
-	.section-1 h1{
+.section-1 h1{
 	
 	font-family: 'Times New Roman', serif;
 	align-self: flex-end;
 	grid-column: 1;
 	grid-row: 1;
 	font-size: 350%;
-	}
+}
 
-	.section-1 p{
-		
+.section-1 p{
+
 	padding-top: 10px;	
 	font-family: 'Futura SC T OT Light' serif;
 	grid-column: 1;
 	grid-row: 2;
 	font-size: 200%;
-	}
+}
 
-	.section-1 img{
+.section-1 img{
 	padding-top: 30px;	
 	height: 450px;	
 	grid-column: 2;
 	grid-row: 1/2;
 	
-	}
-	.section-1 a{
+}
+.section-1 a{
 	padding-top: 10px;	
 	grid-column: 1;	
 	grid-row: 3 ;
 	align-self: flex-start;
-	}
+}
 
 
-	
+
 /*Section 2 - Nossos Produtos*/
 #nossos-produtos {
     background-image: url(../img/cement.jpg);
@@ -306,3 +308,54 @@ header .logo{
     margin-right: 100px;
 }
 
+/*Section 5 - Perguntas Frequentes*/
+#faq {
+    background-image: url(../img/cement.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#faq h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.card-retratil {
+  background-color: #E5DFDB;
+  color: #6C4834;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: 1px solid #6C4834;
+  outline: none;
+  transition: 0.4s;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  border-radius: 30px;
+}
+
+.active, .card-retratil:hover {
+    background-color: #d4cac3;
+}
+
+.card-retratil-resposta {
+  padding: 10px 18px;
+  width: 70%;
+  background-color: #96674e;
+  border: 1px solid #E5DFDB;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 30px;
+
+}
+
+.card-retratil-resposta p {
+  color: #E5DFDB;
+}
