@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /*Geral*/
 * {
 	padding: 0;
@@ -301,4 +303,55 @@ header .logo {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
+}
+
+/*Section 5 - Perguntas Frequentes*/
+#faq {
+    background-image: url(../img/cement.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#faq h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.card-retratil {
+  background-color: #E5DFDB;
+  color: #6C4834;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: 1px solid #6C4834;
+  outline: none;
+  transition: 0.4s;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  border-radius: 30px;
+}
+
+.active, .card-retratil:hover {
+    background-color: #d4cac3;
+}
+
+.card-retratil-resposta {
+  padding: 10px 18px;
+  width: 70%;
+  background-color: #96674e;
+  border: 1px solid #E5DFDB;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.card-retratil-resposta p {
+  color: #E5DFDB;
 }
