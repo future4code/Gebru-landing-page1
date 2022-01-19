@@ -10,10 +10,9 @@ function typeWriter(text) {
 typeWriter(document.querySelector('#typeWrite'))
 
 // Cards Retratreis
-let card = document.getElementsByClassName("card-retratil");
-let i;
+let card = document.getElementsByClassName("card-retratil")
 
-for (i = 0; i < card.length; i++) {
+for (let i = 0; i < card.length; i++) {
   card[i].addEventListener("click", function() {
     this.classList.toggle("active")
 
@@ -25,3 +24,14 @@ for (i = 0; i < card.length; i++) {
     }
   })
 }
+
+// Scroll Lento
+$('a[href^="#"]').on('click', function(e) {
+  e.preventDefault()
+  let id = $(this).attr('href')
+  let = targetOffset = $(id).offset().top
+      
+  $('html, body').animate({ 
+    scrollTop: targetOffset
+  }, 500)
+})
