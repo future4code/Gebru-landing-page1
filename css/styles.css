@@ -427,3 +427,91 @@ header .logo {
 .card-retratil-resposta p {
   color: #E5DFDB;
 }
+
+/*Rodapé - Footer*/
+.rodape{
+    background-color: #c0bab3;
+    height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #af9d85;
+}
+
+.card-rodape{
+    border: 2px dashed #6C4834;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-self: center;
+    width: 350px;
+    height: 220px;
+    flex-direction: column;
+}
+
+.card-rodape:hover{
+    border: 2px solid #6C4834;
+}
+
+.contato{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.contato p{
+    padding: 15px;
+    font-weight: bold;
+}
+
+.contato ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+}
+
+.contato ul li img{
+    height: 40px;
+}
+
+.contato ul li:hover{
+    border: 1px dashed #6C4834;
+}
+
+.onde-estamos{
+    display: flex;
+    align-items: center;
+}
+
+.onde-estamos ul li{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border: transparent;
+    font-weight: bold;
+}
+
+.onde-estamos ul li:hover{
+    border: 1px dashed #6C4834;
+}
+
+.trabalhe-conosco{
+    display: flex;
+    align-items: center;
+}
+
+.trabalhe-conosco a{
+    font-weight: bold;
+}
+
+.trabalhe-conosco a:hover{
+    border: 1px dashed #6C4834;
+}
+
+.p-final{
+    background-color:#c0bab3;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
