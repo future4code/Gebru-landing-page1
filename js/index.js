@@ -25,3 +25,7 @@ for (i = 0; i < card.length; i++) {
     }
   })
 }
+
+// Lista Dinâmica
+
+
