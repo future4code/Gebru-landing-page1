@@ -92,6 +92,19 @@ header {
     opacity: 0.9;
 }
 
+.checkbtn{
+    font-size: 25px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 header .logo {
     width: 56px;
     height: 56px;
@@ -514,4 +527,141 @@ header .logo {
     display: flex;
     justify-content: center;
     font-size: 13px;
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 400px) {
+
+    .cabecalho{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    .nav_link{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:#000000;
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav_link li{
+        color:#7e7a5a;
+        display: block;
+        float: left;
+    }
+
+    .nav_link a:hover, a:active{
+        background: none;
+        color: #b39e75;
+    }
+
+    .check:checked ~ nav{
+        right: 0;
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    .botao{
+        font-size: 10px;
+        color:#000000;
+        padding: 0;
+    }
+
+
+
+    .section-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-1 p{
+        font-size: 20px;
+    }
+    .section-1 a{
+        margin-bottom: 70px;
+    }
+    .section-1 img{
+        display: none;
+    }
+
+    #nossos-produtos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sobre-nossos-produtos p{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    #mercado{
+        margin-right: 100px;
+        margin-bottom: 20px;
+        padding: 0 23px;
+    }
+
+    #restaurante{
+        margin-left: 97px;
+        margin-bottom: 30px;
+    }
+
+
+    .section-4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-4 p{
+        font-size: 20px;
+        padding: 40px;
+    }
+    .card-promocoes{
+        padding: 0 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+
+    }
+
+    .rodape{
+        height: 40vh;
+    }
+    .rodape h2{
+        font-size: 20px;
+    }
+    .rodape p, li, a{
+        font-size: 15px;
+    }
+    .card-rodape{
+        border: none;
+    }
+    .contato h2{
+        margin-right: 20px;
+    }
+    .onde-estamos h2{
+        margin-left: 20px;
+    }
+    .onde-estamos{
+        margin-bottom: 65px;
+        margin-right: 6px;
+    }
+    .onde-estamos li{
+        margin-bottom: 10px;
+    }
+    .trabalhe-conosco{
+        margin-bottom: 90px;
+        margin-left: 5px;
+    }
+    .contato li a img{
+        margin-right: 20px;
+        height: 27px;
+    }
 }
