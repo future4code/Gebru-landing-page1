@@ -534,38 +534,46 @@ header .logo {
 
 @media screen and (max-width: 400px) {
 
+    body{
+        overflow-x: hidden;
+    }
     .cabecalho{
         display: flex;
         justify-content: space-evenly;
     }
-    .checkbtn{
-        display: block;
+
+    .mobile-menu{
+        cursor: pointer;
+    }
+
+    .mobile-menu div{
+        width: 32px;
+        height: 2px;
+        margin: 8px;
+        background-color: #6C4834;
     }
 
     .nav_link{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color:#000000;
-        top: 80px;
-        right: -100%;
-        text-align: center;
-        transition: all .5s;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100vw;
+        height: 92vh;
+        background-color: #6C4834;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
     }
 
-    .nav_link li{
-        color:#7e7a5a;
-        display: block;
-        float: left;
+    .nav_link.active{
+        transform: translate(0);
     }
 
-    .nav_link a:hover, a:active{
-        background: none;
-        color: #b39e75;
-    }
-
-    .check:checked ~ nav{
-        right: 0;
+    .nav_link li a{
+       margin-right: 0;
+       color: #d4cac3;
     }
 
     .logo{
@@ -585,7 +593,8 @@ header .logo {
         flex-wrap: wrap;
     }
     .section-1 p{
-        font-size: 20px;
+        font-size: 18px;
+        text-align: left;
     }
     .section-1 a{
         margin-bottom: 70px;
