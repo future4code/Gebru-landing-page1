@@ -24,3 +24,14 @@ for (let i = 0; i < card.length; i++) {
     }
   })
 }
+
+// Scroll Lento
+$('a[href^="#"]').on('click', function(e) {
+  e.preventDefault()
+  let id = $(this).attr('href')
+  let = targetOffset = $(id).offset().top
+
+  $('html, body').animate({ 
+    scrollTop: targetOffset
+  }, 500)
+}) 
