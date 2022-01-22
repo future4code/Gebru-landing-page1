@@ -30,11 +30,12 @@ $('a[href^="#"]').on('click', function(e) {
   e.preventDefault()
   let id = $(this).attr('href')
   let = targetOffset = $(id).offset().top
-      
+
   $('html, body').animate({ 
     scrollTop: targetOffset
   }, 500)
-})
+
+
 
 // Menu NavBar Responsivo
 class MobileNavbar{
@@ -77,4 +78,6 @@ const mobileNavbar = new MobileNavbar(
   ".nav_link",
   ".nav_link li",
 );
-mobileNavbar.init();
+
+}) 
+
