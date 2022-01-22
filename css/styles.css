@@ -316,6 +316,18 @@ header .logo {
 
 .lista-título {
     grid-column: 1/4;
+
+/*Section 4 - Promoções*/
+.section-4{
+    background-image: url(../img/cement.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+}
+
+.promocoes{
+    grid-column: 1 / 3;
+    grid-row: 1;
     align-self: end;
     justify-self: center;
     text-align: center;
@@ -324,14 +336,19 @@ header .logo {
 }
 
 .lista-título h3 {
+}
+
+.promocoes h2{
+    margin-top: 100px;
+
     font-size: 34px;
     margin-bottom: 14px;
 }
 
+
 .lista-título p {
     font-size: 20px;
 }
-
 
 .dia-a-dia {
     border: 2px solid #6C4834;
@@ -420,6 +437,49 @@ header .logo {
 }
 
 .dia-a-dia a:hover, .churrasco a:hover, .festas a:hover {
+.promocoes p {
+    font-size: 20px;
+}
+
+.card-promocoes{
+    border: 2px dashed #6C4834;
+    grid-column: 1 /3;
+    grid-row: 3;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    width: 400px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.card-promocoes:hover{
+    border: 2px solid #6C4834;
+}
+
+.card-promocoes p{
+    font-size: 20px;
+}
+
+.card-promocoes img{
+    height: 70%;
+    padding: 10px;
+    opacity: 0.7;
+    align-self: center;
+}
+
+.card-promocoes a{
+    border: 2px solid #6C4834;
+    text-align: center;
+    padding: 8px;
+    width: 120px;
+    align-self: center;
+    border-radius: 30px;
+}
+
+.card-promocoes a:hover{
     background-color: #6C4834;
     color: #E5DFDB;
 }
@@ -473,4 +533,92 @@ header .logo {
 
 .card-retratil-resposta p {
   color: #E5DFDB;
+}
+
+/*Rodapé - Footer*/
+.rodape{
+    background-color: #c0bab3;
+    height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #af9d85;
+}
+
+.card-rodape{
+    border: 2px dashed #6C4834;
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-self: center;
+    width: 350px;
+    height: 220px;
+    flex-direction: column;
+}
+
+.card-rodape:hover{
+    border: 2px solid #6C4834;
+}
+
+.contato{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.contato p{
+    padding: 15px;
+    font-weight: bold;
+}
+
+.contato ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+}
+
+.contato ul li img{
+    height: 40px;
+}
+
+.contato ul li:hover{
+    border: 1px dashed #6C4834;
+}
+
+.onde-estamos{
+    display: flex;
+    align-items: center;
+}
+
+.onde-estamos ul li{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border: transparent;
+    font-weight: bold;
+}
+
+.onde-estamos ul li:hover{
+    border: 1px dashed #6C4834;
+}
+
+.trabalhe-conosco{
+    display: flex;
+    align-items: center;
+}
+
+.trabalhe-conosco a{
+    font-weight: bold;
+}
+
+.trabalhe-conosco a:hover{
+    border: 1px dashed #6C4834;
+}
+
+.p-final{
+    background-color:#c0bab3;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
 }
