@@ -656,59 +656,37 @@ header .logo {
 
 /*Responsividade*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
+
+    section {
+        width: 100%;
+        height: 75vh;
+        padding-right: 40px;
+        overflow-x: hidden;
+    }
 
     body{
         overflow-x: hidden;
     }
+
+    #pagina-principal {
+        background-image: url(../img/cement.jpg);
+    }
+
+    #pagina-principal img {
+        padding-right: 20px;
+    }
+
+    #iniciar-navegacao {
+        display: none;
+    }
+
+    #typeWrite {
+        padding-right: 40px;
+    }
+
     .cabecalho{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .mobile-menu{
-        cursor: pointer;
-    }
-
-    .mobile-menu div{
-        width: 32px;
-        height: 2px;
-        margin: 8px;
-        background-color: #6C4834;
-    }
-
-    .nav_link{
-        position: absolute;
-        top: 8vh;
-        left: 0;
-        width: 100vw;
-        height: 92vh;
-        background-color: #6C4834;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .nav_link.active{
-        transform: translate(0);
-    }
-
-    .nav_link li a{
-       margin-right: 0;
-       color: #d4cac3;
-    }
-
-    @keyframes navLinkFade{
-        from{
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0px);
-        }
+        display: none;
     }
 
     .logo{
@@ -732,7 +710,7 @@ header .logo {
         text-align: left;
     }
     .section-1 a{
-        margin-bottom: 70px;
+        display: none;
     }
     .section-1 img{
         display: none;
@@ -746,6 +724,7 @@ header .logo {
     #sobre-nossos-produtos p{
         font-size: 20px;
         padding: 10px 30px;
+        width: 500px;
     }
 
     #mercado{
@@ -759,6 +738,16 @@ header .logo {
         margin-bottom: 30px;
     }
 
+    .Lista-de-Compras {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-título p {
+        width: 400px;
+    }
 
     .section-4{
         display: flex;
@@ -768,6 +757,11 @@ header .logo {
         font-size: 20px;
         padding: 40px;
     }
+
+    .promocoes p {
+        width: 500px;
+    }
+
     .card-promocoes{
         padding: 0 10px;
         margin-right: 50px;
@@ -777,6 +771,7 @@ header .logo {
 
     .rodape{
         height: 40vh;
+        padding: 0 60px 0 10px;
     }
     .rodape h2{
         font-size: 20px;
