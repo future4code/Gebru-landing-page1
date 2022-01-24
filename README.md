@@ -13,7 +13,7 @@
 - [ ] Responsividade
 
 ### Link do Surge
-https://slimy-rule.surge.sh
+https://loutish-plants.surge.sh/
 
 ### 🛠 Tecnologias
 As seguintes ferramentas foram usadas na construção do projeto:
